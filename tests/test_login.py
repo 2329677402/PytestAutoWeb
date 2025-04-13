@@ -17,7 +17,7 @@ from pages.loginPage import LoginPage
 
 
 class TestLogin:
-    @pytest.mark.skipif(reason='skip')
+    # @pytest.mark.skipif(reason='skip')
     @pytest.mark.run(order=1)
     def test_login_success(self, driver):
         login_data = TestData.LoginInfo[0]
